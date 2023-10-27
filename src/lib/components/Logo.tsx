@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Logo() {
     return (
-        <Link href="/" className="flex items-center w-max gap-1">
+        <Link href="/" className="flex w-max items-center gap-1">
             <Image
                 className="inline"
                 src={"/images/logo.svg"}
@@ -11,7 +11,7 @@ export default function Logo() {
                 width={24}
                 height={26}
             />
-            <span className="text-secondary whitespace-nowrap font-bold text-[17px]">
+            <span className="whitespace-nowrap text-[17px] font-bold text-secondary">
                 REEL TALK
             </span>
         </Link>
