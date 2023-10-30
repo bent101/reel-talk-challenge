@@ -27,6 +27,8 @@ const config: Config = {
         colors: {
             white: "#fff",
             black: "#000",
+            transparent: "transparent",
+
             primary: "#ffa724",
             secondary: "#222222",
             gray: "#6d6d6d",
@@ -38,7 +40,7 @@ const config: Config = {
              * gradient bottom (usage: `bg-gradient from-yellow to-orange`)
              */
             orange: "#ff6928",
-            "high-emphasis": "#ffffffeb",
+            "high-emphasis": "#ffffffe5",
             "medium-emphasis": "#ffffff99",
             disabled: "#ffffff61",
         },
@@ -50,6 +52,9 @@ const config: Config = {
             },
             fontFamily: {
                 sans: ["'Avenir Next'", ...defaultTheme.fontFamily.sans],
+            },
+            maxWidth: {
+                xl: "572px",
             },
         },
     },

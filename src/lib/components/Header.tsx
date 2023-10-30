@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Logo from "./Logo";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -8,19 +8,19 @@ export default function Header() {
             <div className="mx-auto flex h-full max-w-[1120px] items-center px-4">
                 <Logo />
                 <Link
-                    className="ml-4 px-2 py-1.5 text-secondary hover:underline"
+                    className="ml-4 px-2 py-1.5 text-secondary underline-offset-4 hover:underline"
                     href="/browse"
                 >
                     Browse
                 </Link>
                 <Link
-                    className="px-2 py-1.5 text-secondary hover:underline"
+                    className="px-2 py-1.5 text-secondary underline-offset-4 hover:underline"
                     href="/community"
                 >
                     Community
                 </Link>
                 <Link
-                    className="px-2 py-1.5 text-secondary hover:underline"
+                    className="px-2 py-1.5 text-secondary underline-offset-4 hover:underline"
                     href="/discussions"
                 >
                     Discussions
@@ -30,14 +30,14 @@ export default function Header() {
                         <input
                             type="text"
                             placeholder="Search"
-                            className="absoulute inset-0 w-full rounded-lg bg-black/[8%] pb-[0.3125rem] pl-10 pr-6 pt-[0.4375rem] placeholder:text-gray"
+                            className="absoulute inset-0 w-full rounded-lg bg-black/[8%] py-2 pl-12 pr-6 placeholder:text-gray"
                         />
                         <Image
+                            src="/images/icons/search.svg"
+                            alt={""}
                             width={16}
                             height={16}
-                            src="/images/search.svg"
-                            alt={""}
-                            className="pointer-events-none absolute left-2.5 top-2.5 w-4"
+                            className="pointer-events-none absolute left-6 top-[11px] w-4"
                         />
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function Header() {
                     Login
                 </Link>
                 <Link
-                    href="/login"
+                    href="/onboarding/1"
                     className="rounded border border-primary bg-primary px-4 py-1.5 text-secondary"
                 >
                     Signup

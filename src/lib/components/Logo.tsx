@@ -6,7 +6,7 @@ export default function Logo() {
         <Link href="/" className="flex w-max items-center gap-1">
             <Image
                 className="inline"
-                src={"/images/logo.svg"}
+                src={"/images/icons/logo.svg"}
                 alt={"Reel Talk"}
                 width={24}
                 height={26}

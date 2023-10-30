@@ -14,4 +14,8 @@
         font-weight: 700;
         src: url("/fonts/AvenirNextLTPro-Bold.woff2");
     }
+
+    input {
+        @apply focus:outline-none;
+    }
 }
